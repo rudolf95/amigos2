@@ -18,6 +18,7 @@ public class ControladorUsuario{
     }
     @GetMapping("/usuario/{id}")
     public Usuario buscarPorId(@PathVariable String id){
+
         return repoUsuario.findById(id).get();
     }
     @PostMapping("/usuario")
